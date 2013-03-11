@@ -25,7 +25,7 @@ def get_products(node_id)
   (1..total_pages).each do |page_number|
     page = get_page(node_id, page_number)
     for product in page['ProductListItems']
-      p product  
+      puts product  
     end  
   end
 end
